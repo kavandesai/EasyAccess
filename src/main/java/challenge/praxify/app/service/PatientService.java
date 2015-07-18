@@ -17,7 +17,7 @@ public class PatientService {
 	    }
 	 
 	    public List<Patient> getList() {
-	        return patientRepository.findAll();
+	        return (List<Patient>) patientRepository.findAll();
 	    }
 	 
 	    public Patient insert(Patient patient) {
